@@ -117,35 +117,40 @@ h1 {
     counter-reset: step-counter;
 }
 
+<!-- החלף בקובץ של הדג המרוקאי את כל בלוק ה-CSS של steps-list בקטע הזה -->
+
+.steps-list {
+    counter-reset: step-counter;
+    list-style: none;
+    padding: 0;
+}
+
 .steps-list li {
     position: relative;
     margin-bottom: 20px;
-    padding-right: 50px;
+    padding: 15px 50px 15px 15px;
     border: 1px solid var(--secondary-color);
-    padding: 15px;
     border-radius: 8px;
-    background-color: rgba(85, 126, 78, 0.05);
+    background-color: rgba(141, 110, 99, 0.05);
 }
 
 .steps-list li::before {
     counter-increment: step-counter;
     content: counter(step-counter);
     position: absolute;
-    right: -20px;
+    right: 10px;
     top: 50%;
     transform: translateY(-50%);
-    width: 40px;
-    height: 40px;
-    background-color: var(--secondary-color);
+    width: 30px;
+    height: 30px;
+    background-color: var(--primary-color);
     color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5em;
-    font-weight: 700;
+    font-weight: bold;
 }
-
 .optional-tip {
     font-style: italic;
     color: var(--secondary-color);
@@ -231,6 +236,23 @@ footer {
             <li>פרוסות דג טונה</li>
             <li>לימון</li>
         </ul>
+        <div style="margin-top:15px;">
+    <a href="index.html" style="
+        display:inline-block;
+        background:#ffffff;
+        color:#5d4037;
+        padding:10px 18px;
+        border-radius:12px;
+        text-decoration:none;
+        font-weight:bold;
+        border:2px solid #5d4037;
+        transition:0.3s;
+    "
+    onmouseover="this.style.background='#5d4037';this.style.color='white';"
+    onmouseout="this.style.background='white';this.style.color='#5d4037';">
+        חזרה לעמוד הראשי
+    </a>
+</div>
     </div>
 
     <div class="steps-section">
