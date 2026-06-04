@@ -1,73 +1,203 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>מתכונים מבית סבתא</title>
-<style>
-:root{--bg:#fffaf4;--card:#ffffff;--gold:#d4a373;--text:#2f2a26;--muted:#7a6f67}
-*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#fffaf4,#f8efe4);color:var(--text)}
-.container{max-width:1100px;margin:auto;padding:32px 20px}
-.hero{text-align:center;padding:40px 20px}
-.hero h1{font-size:48px;margin:0 0 12px}
-.hero p{font-size:20px;color:var(--muted);margin:0 auto;max-width:700px;line-height:1.6}
-.badge{display:inline-block;background:#fff;border:1px solid #ead8c2;padding:10px 16px;border-radius:999px;margin-top:18px;font-weight:bold}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;margin-top:40px}
-.card{background:var(--card);border-radius:22px;padding:24px;box-shadow:0 12px 30px rgba(0,0,0,.08);transition:.2s transform,.2s box-shadow}
-.card:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,.12)}
-.card h2{margin-top:0;font-size:28px}
-.card p{color:var(--muted);line-height:1.6;min-height:72px}
-.btn{display:inline-block;text-decoration:none;background:var(--gold);color:#fff;padding:12px 18px;border-radius:12px;font-weight:bold}
-.footer{text-align:center;margin-top:50px;color:var(--muted);font-size:14px}
-.spark{font-size:26px}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מתכונים מבית סבתא</title>
+
+    <style>
+        :root {
+            --bg: #fffaf4;
+            --card: #ffffff;
+            --gold: #d4a373;
+            --text: #2f2a26;
+            --muted: #7a6f67;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #fffaf4, #f8efe4);
+            color: var(--text);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 32px 20px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0 0 12px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--muted);
+            margin: 0 auto;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #fff;
+            border: 1px solid #ead8c2;
+            padding: 10px 16px;
+            border-radius: 999px;
+            margin-top: 18px;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 22px;
+            padding: 24px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+            transition: .2s transform, .2s box-shadow;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+
+        .card p {
+            color: var(--muted);
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: var(--gold);
+            color: #fff;
+            padding: 12px 18px;
+            border-radius: 12px;
+            font-weight: bold;
+            margin-top: auto;
+            align-self: flex-start;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+
+        .spark {
+            font-size: 26px;
+        }
+    </style>
 </head>
+
 <body>
-  
-<div class="container">
-  <section class="grid">
-  <article class="card">
-    <h2>🐟 דג מרוקאי</h2>
-    <p>מתכון עשיר בטעמים, חריף במידה הנכונה, עם רוטב אדום מושלם לשבת וחלה טרייה ליד.</p>
-    <a class="btn" href="fish.html">למתכון</a>
-  </article>
+    <div class="container">
 
-  <article class="card">
-    <h2>🍰 עוגת פסח</h2>
-    <p>עוגה חגיגית, רכה ומפנקת שמתאימה לשולחן החג וגם לקפה של אחר הצהריים.</p>
-    <a class="btn" href="cake.html">למתכון</a>
-  </article>
+        <section class="hero">
+            <div class="spark">🍲🍰👵</div>
 
-  <article class="card">
-    <h2>🥣 קניידלך לפסח</h2>
-    <p>
-      קניידלך רכים, אווריריים ומנחמים – בדיוק כמו של סבתא.
-      מומלץ להגיש בתוך מרק עוף חם ומהביל לארוחת חג מושלמת.
-    </p>
-    <a class="btn" href="kneidlach.html">למתכון</a>
-  </article>
+            <h1>מתכונים מבית סבתא</h1>
 
-  <article class="card">
-    <h2>🍗 מרק עוף</h2>
-    <p>
-      מרק עוף ביתי, חם ומנחם עם ירקות ועוף רך שמתבשל לאט.
-      מושלם לימי חורף ולצד קניידלך רכים של פסח.
-    </p>
-    <a class="btn" href="chicken-soup.html">למתכון</a>
-  </article>
+            <p>
+                טעמים של פעם, זיכרונות מהמטבח ומתכונים שעוברים מדור לדור.
+                כאן תמצאו את המאכלים האהובים של המשפחה – בדיוק כמו שסבתא הייתה מכינה.
+            </p>
 
-  <article class="card">
-    <h2>🍰 עוגת גבינה</h2>
-    <p>
-      עוגת גבינה קלאסית, קרמית ונימוחה עם בסיס פריך ומרקם מושלם.
-      קינוח אהוב שמתאים לכל חג, שבת או סתם רגע של מתוק.
-    </p>
-    <a class="btn" href="cheesecake.html">למתכון</a>
-  </article>
-</section>
-</section>
+            <div class="badge">
+                ✨ המתכונים והעיצוב נבנו בעזרת AI
+            </div>
+        </section>
 
-  <div class="footer">נבנה באהבה למשפחה ולזיכרונות טובים ❤️</div>
-</div>
+        <section class="grid">
+
+            <article class="card">
+                <h2>🐟 דג מרוקאי</h2>
+
+                <p>
+                    מתכון עשיר בטעמים, חריף במידה הנכונה,
+                    עם רוטב אדום מושלם לשבת וחלה טרייה ליד.
+                </p>
+
+                <a class="btn" href="fish.html">למתכון</a>
+            </article>
+
+            <article class="card">
+                <h2>🍰 עוגת פסח</h2>
+
+                <p>
+                    עוגה חגיגית, רכה ומפנקת שמתאימה
+                    לשולחן החג וגם לקפה של אחר הצהריים.
+                </p>
+
+                <a class="btn" href="cake.html">למתכון</a>
+            </article>
+
+            <article class="card">
+                <h2>🥣 קניידלך לפסח</h2>
+
+                <p>
+                    קניידלך רכים, אווריריים ומנחמים – בדיוק כמו של סבתא.
+                    מומלץ להגיש בתוך מרק עוף חם ומהביל לארוחת חג מושלמת.
+                </p>
+
+                <a class="btn" href="kneidlach.html">למתכון</a>
+            </article>
+
+            <article class="card">
+                <h2>🍗 מרק עוף</h2>
+
+                <p>
+                    מרק עוף ביתי, חם ומנחם עם ירקות ועוף רך שמתבשל לאט.
+                    מושלם לימי חורף ולצד קניידלך רכים של פסח.
+                </p>
+
+                <a class="btn" href="chicken-soup.html">למתכון</a>
+            </article>
+
+            <article class="card">
+                <h2>🧀 עוגת גבינה</h2>
+
+                <p>
+                    עוגת גבינה קלאסית, קרמית ונימוחה עם בסיס פריך ומרקם מושלם.
+                    קינוח אהוב שמתאים לכל חג, שבת או סתם רגע של מתוק.
+                </p>
+
+                <a class="btn" href="cheesecake.html">למתכון</a>
+            </article>
+
+        </section>
+
+        <div class="footer">
+            נבנה באהבה למשפחה ולזיכרונות טובים ❤️
+        </div>
+
+    </div>
 </body>
 </html>
