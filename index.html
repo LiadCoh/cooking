@@ -1,243 +1,235 @@
 <!DOCTYPE html>
-
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-```
-<title>מתכונים מבית סבתא | דג מרוקאי, קניידלך, מרק עוף ועוגות ביתיות</title>
+    <title>מתכונים מבית סבתא | דג מרוקאי, קניידלך, מרק עוף ועוגות ביתיות</title>
 
-<meta name="description" content="אוסף מתכונים משפחתיים מבית סבתא: דג מרוקאי, קניידלך לפסח, מרק עוף ביתי, עוגת פסח ועוגת גבינה. מתכונים פשוטים, טעימים ומפורטים.">
+    <meta name="description" content="אוסף מתכונים משפחתיים מבית סבתא: דג מרוקאי, קניידלך, מרק עוף, עוגת פסח ועוגת גבינה. מתכונים ביתיים, פשוטים וטעימים.">
 
-<meta name="keywords" content="מתכונים, מתכוני סבתא, דג מרוקאי, חריימה, קניידלך, מרק עוף, עוגת גבינה, עוגת פסח">
+    <meta property="og:title" content="מתכונים מבית סבתא">
+    <meta property="og:description" content="מתכונים משפחתיים שעוברים מדור לדור">
 
-<meta property="og:title" content="מתכונים מבית סבתא">
-<meta property="og:description" content="מתכונים משפחתיים שעוברים מדור לדור">
-<meta property="og:type" content="website">
-<meta property="og:image" content="cover.jpg">
+    <style>
+        :root {
+            --bg: #fffaf4;
+            --card: #ffffff;
+            --gold: #d4a373;
+            --text: #2f2a26;
+            --muted: #7a6f67;
+        }
 
-<style>
-    :root {
-        --bg: #fffaf4;
-        --card: #ffffff;
-        --gold: #d4a373;
-        --text: #2f2a26;
-        --muted: #7a6f67;
-    }
+        * {
+            box-sizing: border-box;
+        }
 
-    * {
-        box-sizing: border-box;
-    }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(180deg, #fffaf4, #f8efe4);
+            color: var(--text);
+        }
 
-    html {
-        scroll-behavior: smooth;
-    }
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 32px 20px;
+        }
 
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: linear-gradient(180deg, #fffaf4, #f8efe4);
-        color: var(--text);
-    }
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
 
-    .container {
-        max-width: 1100px;
-        margin: auto;
-        padding: 32px 20px;
-    }
-
-    .hero {
-        text-align: center;
-        padding: 40px 20px;
-    }
-
-    .spark {
-        font-size: 32px;
-        margin-bottom: 10px;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-        margin: 0 0 12px;
-    }
-
-    .hero p {
-        font-size: 20px;
-        color: var(--muted);
-        margin: 0 auto;
-        max-width: 700px;
-        line-height: 1.8;
-    }
-
-    .badge {
-        display: inline-block;
-        background: #fff;
-        border: 1px solid #ead8c2;
-        padding: 10px 16px;
-        border-radius: 999px;
-        margin-top: 18px;
-        font-weight: bold;
-    }
-
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-        gap: 24px;
-        margin-top: 40px;
-    }
-
-    .card-link {
-        text-decoration: none;
-        color: inherit;
-        display: block;
-    }
-
-    .card {
-        background: var(--card);
-        border-radius: 22px;
-        padding: 24px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
-        transition: .25s transform, .25s box-shadow;
-    }
-
-    .card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
-    }
-
-    .card h2 {
-        margin-top: 0;
-        font-size: 28px;
-    }
-
-    .card p {
-        color: var(--muted);
-        line-height: 1.7;
-        flex-grow: 1;
-    }
-
-    .btn {
-        display: inline-block;
-        margin-top: auto;
-        background: var(--gold);
-        color: white;
-        padding: 12px 18px;
-        border-radius: 12px;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .footer {
-        text-align: center;
-        margin-top: 50px;
-        color: var(--muted);
-        font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
         .hero h1 {
-            font-size: 36px;
+            font-size: 48px;
+            margin: 0 0 12px;
         }
 
         .hero p {
-            font-size: 18px;
+            font-size: 20px;
+            color: var(--muted);
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
         }
-    }
-</style>
-```
 
+        .badge {
+            display: inline-block;
+            margin-top: 18px;
+            background: #fff;
+            border: 1px solid #ead8c2;
+            padding: 10px 16px;
+            border-radius: 999px;
+            font-weight: bold;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+            align-items: stretch;
+        }
+
+        .card {
+            background: var(--card);
+            border-radius: 22px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+            transition: 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 26px;
+        }
+
+        .card p {
+            color: var(--muted);
+            line-height: 1.6;
+            flex-grow: 1;
+        }
+
+        .card-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 12px 16px;
+            border-radius: 12px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #d4a373;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: #c48d5f;
+        }
+
+        .btn-whatsapp {
+            background: #25D366;
+            color: #fff;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1ebe5d;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--muted);
+            font-size: 14px;
+        }
+    </style>
 </head>
 
 <body>
 
-```
 <div class="container">
 
+    <!-- HERO -->
     <section class="hero">
-        <div class="spark">🍲🍰👵</div>
-
+        <div style="font-size:32px;">🍲🍰👵</div>
         <h1>מתכונים מבית סבתא</h1>
-
-        <p>
-            טעמים של פעם, זיכרונות מהמטבח ומתכונים שעוברים מדור לדור.
-            כאן תמצאו את המאכלים האהובים של המשפחה – בדיוק כמו שסבתא הייתה מכינה.
-        </p>
-
-        <div class="badge">
-            ✨ המתכונים והעיצוב נבנו בעזרת AI
-        </div>
+        <p>טעמים של פעם, זיכרונות מהמטבח ומתכונים שעוברים מדור לדור.</p>
+        <div class="badge">✨ אתר מתכונים משפחתי</div>
     </section>
 
+    <!-- GRID -->
     <section class="grid">
 
-        <a class="card-link" href="fish.html">
-            <article class="card">
-                <h2>🐟 דג מרוקאי</h2>
+        <!-- דג מרוקאי -->
+        <div class="card"
+             data-title="דג מרוקאי"
+             data-url="https://liadcooking.site/fish.html">
 
-                <p>
-                    מתכון עשיר בטעמים, חריף במידה הנכונה,
-                    עם רוטב אדום מושלם לשבת וחלה טרייה ליד.
-                </p>
+            <h2>🐟 דג מרוקאי</h2>
+            <p>מתכון עשיר בטעמים, חריף במידה הנכונה עם רוטב אדום מושלם לשבת.</p>
 
-                <span class="btn">למתכון</span>
-            </article>
-        </a>
+            <div class="card-actions">
+                <a class="btn btn-primary" href="fish.html">🐟למתכון</a>
+                <a class="btn btn-whatsapp share-btn" target="_blank">📤 שתף</a>
+            </div>
+        </div>
 
-        <a class="card-link" href="cake.html">
-            <article class="card">
-                <h2>🍰 עוגת פסח</h2>
+        <!-- עוגת פסח -->
+        <div class="card"
+             data-title="עוגת פסח"
+             data-url="https://liadcooking.site/cake.html">
 
-                <p>
-                    עוגה חגיגית, רכה ומפנקת שמתאימה
-                    לשולחן החג וגם לקפה של אחר הצהריים.
-                </p>
+            <h2>🍰 עוגת פסח</h2>
+            <p>עוגה חגיגית, רכה ומפנקת שמתאימה לשולחן החג.</p>
 
-                <span class="btn">למתכון</span>
-            </article>
-        </a>
+            <div class="card-actions">
+                <a class="btn btn-primary" href="cake.html">🍰 למתכון</a>
+                <a class="btn btn-whatsapp share-btn" target="_blank">📤 שתף</a>
+            </div>
+        </div>
 
-        <a class="card-link" href="kneidlach.html">
-            <article class="card">
-                <h2>🍲 קניידלך לפסח</h2>
+        <!-- קניידלך -->
+        <div class="card"
+             data-title="קניידלך לפסח"
+             data-url="https://liadcooking.site/kneidlach.html">
 
-                <p>
-                    קניידלך רכים, אווריריים ומנחמים בדיוק כמו של סבתא.
-                    מושלמים בתוך מרק עוף חם ומהביל לארוחת חג חגיגית.
-                </p>
+            <h2>🍲 קניידלך לפסח</h2>
+            <p>קניידלך רכים ואווריריים כמו של סבתא בתוך מרק עוף חם.</p>
 
-                <span class="btn">למתכון</span>
-            </article>
-        </a>
+            <div class="card-actions">
+                <a class="btn btn-primary" href="kneidlach.html">🍲 למתכון</a>
+                <a class="btn btn-whatsapp share-btn" target="_blank">📤 שתף</a>
+            </div>
+        </div>
 
-        <a class="card-link" href="chicken-soup.html">
-            <article class="card">
-                <h2>🍗 מרק עוף</h2>
+        <!-- מרק עוף -->
+        <div class="card"
+             data-title="מרק עוף"
+             data-url="https://liadcooking.site/chicken-soup.html">
 
-                <p>
-                    מרק עוף ביתי, עשיר בירקות ועוף רך שמתבשל לאט.
-                    מושלם לימי חורף ולצד קניידלך מסורתיים.
-                </p>
+            <h2>🍗 מרק עוף</h2>
+            <p>מרק ביתי חם עם ירקות ועוף שמתבשל לאט.</p>
 
-                <span class="btn">למתכון</span>
-            </article>
-        </a>
+            <div class="card-actions">
+                <a class="btn btn-primary" href="chicken-soup.html">🍗למתכון</a>
+                <a class="btn btn-whatsapp share-btn" target="_blank">📤 שתף</a>
+            </div>
+        </div>
 
-        <a class="card-link" href="cheesecake.html">
-            <article class="card">
-                <h2>🧀 עוגת גבינה</h2>
+        <!-- עוגת גבינה -->
+        <div class="card"
+             data-title="עוגת גבינה"
+             data-url="https://liadcooking.site/cheesecake.html">
 
-                <p>
-                    עוגת גבינה קלאסית, קרמית ונימוחה עם מרקם מושלם.
-                    קינוח אהוב שמתאים לחג, לשבת או לקפה של אחר הצהריים.
-                </p>
+            <h2>🧀 עוגת גבינה</h2>
+            <p>עוגת גבינה קלאסית, קרמית ונימוחה עם מרקם מושלם.</p>
 
-                <span class="btn">למתכון</span>
-            </article>
-        </a>
+            <div class="card-actions">
+                <a class="btn btn-primary" href="cheesecake.html">🧀 למתכון</a>
+                <a class="btn btn-whatsapp share-btn" target="_blank">📤 שתף</a>
+            </div>
+        </div>
 
     </section>
 
@@ -246,7 +238,22 @@
     </div>
 
 </div>
-```
+
+<!-- WHATSAPP SHARE ENGINE -->
+<script>
+document.querySelectorAll(".card").forEach(card => {
+    const title = card.getAttribute("data-title");
+    const url = card.getAttribute("data-url");
+
+    const btn = card.querySelector(".share-btn");
+
+    const text = encodeURIComponent(
+        `בדקו את המתכון ל-${title} 👨‍🍳 - ${url}`
+    );
+
+    btn.href = `https://wa.me/?text=${text}`;
+});
+</script>
 
 </body>
 </html>
